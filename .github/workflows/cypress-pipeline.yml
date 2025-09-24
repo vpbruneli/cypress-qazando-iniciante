@@ -15,8 +15,13 @@ jobs:
 
         # passo a passo para rodar os testes
         steps: 
+                # clone do projeto
             - name: Checkout/Clone do projeto
               uses: actions/checkout@v4
+
+                  # exemplo de execução no terminal
+            - name: Instalar dependencias do projeto
+              run: npm install
 
               # execução e configuração do projeto
             - name: Run testes
