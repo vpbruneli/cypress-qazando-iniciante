@@ -6,6 +6,7 @@ module.exports = defineConfig({
     reporter: 'cypress-mochawesome-reporter',
     reporterOptions: {
       charts: true,
+      reportDir: 'cypress/reports/html',
       reportTitle: 'Projeto do curso de Cypress',
       reportPageTitle: 'Relatorio Mocha Awesome'
     },
